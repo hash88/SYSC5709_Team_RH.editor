@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated bank -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="BankingSystem.presentation.BankingSystemModelWizardID"
+            name="%_UI_BankingSystemModelWizard_label"
+            class="BankingSystem.presentation.BankingSystemModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BankingSystemModelFile.gif">
+         <description>%_UI_BankingSystemModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated bank -->
+      <editor
+            id="BankingSystem.presentation.BankingSystemEditorID"
+            name="%_UI_BankingSystemEditor_label"
+            icon="icons/full/obj16/BankingSystemModelFile.gif"
+            extensions="bankingsystem"
+            class="BankingSystem.presentation.BankingSystemEditor"
+            contributorClass="BankingSystem.presentation.BankingSystemActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
